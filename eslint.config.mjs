@@ -1,14 +1,11 @@
-// eslint.config.js
-
 import js from '@eslint/js';
 import globals from 'globals';
 import eslintPluginJest from 'eslint-plugin-jest';
 
 export default [
-  // Base configuration for all JavaScript files
   {
     files: ['**/*.js'],
-    ignores: ['tests/**'], 
+    ignores: ['tests/**', 'cypress/**', 'cypress.config.js'], 
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
