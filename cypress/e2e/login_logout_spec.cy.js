@@ -9,11 +9,6 @@ const invalidEmail = 'notCorrect@stud.noroff.no';
 const invalidPassword = 'qwerty123456';
 
 describe('Login and Logout functionality', () => {
-  beforeEach(() => {
-    // Visit the login page before each test
-    cy.visit(url);
-  });
-
   it(' checks that the user can log in with the login form with valid credentials', function () {
     cy.visit(url);
     cy.wait(500);
